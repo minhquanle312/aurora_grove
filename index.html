@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/app.css" />
+  <title>Aurora Grove</title>
+</head>
+
+<body>
+
+  <div class="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a href="#" class="navbar-brand">
+        <h3 class="mb-0">Aurora Grove</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#showcase" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#explore" class="nav-link">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a href="#newsletter" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" data-toggle="modal" data-target="#bookingModal">Book</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+      <div id="overlay"></div>
+      <div id="header" class="header container text-white text-center">
+        <h3 class="display-5 mb-0">MODERN CAMPING</h3>
+        <h1 class="display-1">AURORA GROVE</h1>
+        <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, a!</p>
+        <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">BOOK
+          NOW</button>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section id="service">
+      <div class="container text-center mt-5">
+        <h2>YOU SHOW UP, WE PITCH THE TENT</h2>
+        <div class="row">
+          <div class="col-md-4 p-3">
+            <img src="images/icons/tent.png" alt="" class="img-fluid d-none d-md-inline">
+            <h3>Amentities You Want</h3>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste ipsa quod nulla
+              repudiandae doloribus.</p>
+          </div>
+          <div class="col-md-4 p-3">
+            <img src="images/icons/campfire.png" alt="" class="img-fluid d-none d-md-inline">
+            <h3>Amentities You Want</h3>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste ipsa quod nulla
+              repudiandae doloribus.</p>
+          </div>
+          <div class="col-md-4 p-3">
+            <img src="images/icons/nature.png" alt="" class="img-fluid d-none d-md-inline">
+            <h3>Amentities You Want</h3>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste ipsa quod nulla
+              repudiandae doloribus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card explore (for more infomation) -->
+    <section id="explore">
+      <div class="container text-center mt-2 p-3">
+        <h3>WE'VE CREATED A CAMPING EXPERIENCE THAT'S TURN-KEY AND HASSLE FREE</h3>
+        <div class="row m-2">
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img src="images/winter.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title text-primary">EXPERIENCE</h2>
+                <p class="lead card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officiis.</p>
+                <a href="" class="btn btn-lg btn-outline-primary">Go Somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img src="images/dogs.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title text-primary">EXPLORE</h2>
+                <p class="lead card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officiis.</p>
+                <a href="" class="btn btn-lg btn-outline-primary">Go Somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+    <section id="quotes">
+      <div class="container text-center mt-4">
+        <h3>WHAT OUR HAPPY CAMPERS ARE SAYING</h3>
+        <div class="row">
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veritatis?</p>
+              <footer class="blockquote-footer">Mark Twain</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veritatis?</p>
+              <footer class="blockquote-footer">Mark Twain</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veritatis?</p>
+              <footer class="blockquote-footer">Mark Twain</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider -->
+    <section id="slider">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-7 mb-3">
+            <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- items are rendered in main.js (customersImageItem) -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h3>CAMPING MADE COZY</h3>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore consequuntur odio commodi
+              ducimus inventore! Dolorum, eaque saepe repudiandae minima placeat voluptatum quasi ratione vitae
+              molestiae
+              laborum nihil. Beatae, explicabo pariatur.</p>
+            <a href="">See for yourself <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customers's image (gallery folder) -->
+    <section id="customers-image">
+      <div class="container text-center mt-5">
+        <h3>WHAT OTHERS ARE SAYING</h3>
+        <h5 class="text-primary">#AURORAGROVE</h5>
+        <div class="row mt-4">
+          <!-- items are rendered in main.js (customersImageItem) -->
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Customers's review -->
+    <section>
+      <div class="container text-center mt-4">
+        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+        <blockquote class="blockquote">
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus unde, nulla,
+            ducimus voluptatum facilis sint veniam dolorem ex officiis, nemo deserunt nam quae! Rem blanditiis soluta
+            optio maxime, sunt dicta non iusto deleniti. Labore, facere impedit aperiam ducimus quisquam non consequatur
+            modi porro nesciunt natus quibusdam explicabo obcaecati. Labore!</p>
+          <footer class="blockquote-footer">Kitty Cat</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Register newsletter -->
+    <section id="newsletter" class="bg-dark">
+      <div class="container text-white text-center py-5">
+        <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+            <form action="" class="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your email" id="">
+                <div class="input-group-append">
+                  <button class="btn btn-primary">Join now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" class="bg-secondary">
+      <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+        <li class="nav-item">
+          <a href="" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">EXPLORE</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Booking modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, vero?</p>
+            <form>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="adults">Number of Adults</label>
+                <select class="form-control" id="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="children">Number of Children</label>
+                <select class="form-control" id="children">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="requests">Addition requests</label>
+                <textarea class="form-control" id="requests" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit Request</button>
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <div id="scrollTop">
+      <a href="#showcase" class="btn btn-primary btn-lg"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
