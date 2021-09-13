@@ -63,11 +63,6 @@ function SliderImage() {
             <span class="sr-only">Next</span>
         </a>
     `
-    const anchorItem = `
-        <div class="carousel-item active">
-            <img src="images/slider/caribou.png" alt="" class="d-block w-100 rounded shadow">
-        </div>
-    `
 
     const sliderImageItem = sliderImages.map(sliderImage => {
         return `
@@ -82,20 +77,20 @@ function SliderImage() {
 function CustomerImage() {
     const customerImageItem = galleryImages.map((galleryImage) => {
         return `
-        <div class="col-6 col-lg-3 mb-4 customer-item">
-            <img src="${galleryImage.path}" class="img-fluid rounded shadow" data-toggle="modal"
-            data-target="#customer-img-${galleryImage.id}">
-        </div>
-
-        <div class="modal fade" id="customer-img-${galleryImage.id}" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body p-0">
-                  <img src="${galleryImage.path}" alt="" class="img-fluid d-block w-100 rounded-lg">
-                </div>
-              </div>
+            <div class="col-6 col-lg-3 mb-4 customer-item">
+                <img src="${galleryImage.path}" class="img-fluid rounded shadow" data-toggle="modal"
+                data-target="#customer-img-${galleryImage.id}">
             </div>
-          </div>
+
+            <div class="modal fade" id="customer-img-${galleryImage.id}" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                        <img src="${galleryImage.path}" alt="" class="img-fluid d-block w-100 rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
         `
     }).join('')
     $('#customers-image .row').html(customerImageItem)
