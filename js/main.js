@@ -96,6 +96,17 @@ function CustomerImage() {
     $('#customers-image .row').html(customerImageItem)
 }
 
+function handleScroll() {
+    $(document).scroll(function () {
+        const scrollTop = window.scrollY
+        if (scrollTop <= 500) {
+            $('#scrollTop').css('opacity', '0')
+        } else {
+            $('#scrollTop').css('opacity', '0.8')
+        }
+    })
+}
+
 function render() {
     SliderImage()
     CustomerImage()
@@ -103,4 +114,5 @@ function render() {
 
 ; (function () {
     render()
+    handleScroll()
 })()
