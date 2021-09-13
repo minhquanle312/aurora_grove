@@ -34,25 +34,25 @@ const galleryImages = [
 ]
 
 const sliderImages = [
-    // {
-    //     path: 'images/slider/caribou.png',
-    //     isActive: true,
-    // },
+    {
+        path: 'images/slider/caribou.png',
+        isActive: true,
+    },
     {
         path: 'images/slider/coffee.png',
-        // isActive: false,
+        isActive: false,
     },
     {
         path: 'images/slider/fire.png',
-        // isActive: false,
+        isActive: false,
     },
     {
         path: 'images/slider/trees.png',
-        // isActive: false,
+        isActive: false,
     },
 ]
 
-function renderSliderImage() {
+function SliderImage() {
     const sliderControl = `
         <a href="#mainCarousel" class="carousel-control-prev" data-slide="prev" role="button">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,17 +69,17 @@ function renderSliderImage() {
         </div>
     `
 
-    const sliderImageItem = anchorItem.concat(sliderImages.map(sliderImage => {
+    const sliderImageItem = sliderImages.map(sliderImage => {
         return `
-            <div class="carousel-item">
+            <div class="carousel-item ${sliderImage.isActive ? 'active' : ''}">
                 <img src="${sliderImage.path}" alt="" class="d-block w-100 rounded shadow">
             </div>
         `
-    }).join('').concat(sliderControl))
+    }).join('').concat(sliderControl)
     $('#slider .carousel-inner').html(sliderImageItem)
 }
 
-function renderCustomerImage() {
+function CustomerImage() {
     const customerImageItem = galleryImages.map((galleryImage) => {
         return `
         <div class="col-6 col-lg-3 mb-4 customer-item">
@@ -102,8 +102,8 @@ function renderCustomerImage() {
 }
 
 function render() {
-    renderSliderImage()
-    renderCustomerImage()
+    SliderImage()
+    CustomerImage()
 }
 
 ; (function () {
