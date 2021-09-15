@@ -1,103 +1,103 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    background: white;
+  font-family: 'Raleway', sans-serif;
+  background: white;
 }
 
 .navbar {
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 3;
+
+  .navbar-brand h3 {
     font-weight: 100;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+  }
 
-    z-index: 3;
+  .nav-item {
+    font-style: 1.4rem;
+  }
 
-    .navbar-brand h3 {
-        font-weight: 100;
-    }
-
-    .nav-item {
-        font-style: 1.4rem;
-    }
-
-    .nav-link:hover {
-        transition: border 0.2s;
-        border-bottom: 1px solid white;
-    }
+  .nav-link:hover {
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+  }
 }
 
 #showcase {
-    background: url("../images/main.jpeg") bottom center / cover no-repeat;
-    min-height: 750px;
-    position: relative;
+  background: url('../images/main.jpeg') bottom center / cover no-repeat;
+  min-height: 750px;
+  position: relative;
 
-    #overlay {
-        background: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
+  #overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 
-        z-index: 1;
-    }
+    z-index: 1;
+  }
 
-    #header {
-        z-index: 2;
-    }
+  #header {
+    z-index: 2;
+  }
 
-    h1 {
-        font-family: "Questrial", sans-serif;
-    }
+  h1 {
+    font-family: 'Questrial', sans-serif;
+  }
 
-    #book {
-        font-style: 1.5rem;
-        border-radius: 2rem;
-    }
+  #book {
+    font-style: 1.5rem;
+    border-radius: 2rem;
+  }
 }
 
 #customers-image {
-    .customer-item img {
-        cursor: pointer;
-    }
+  .customer-item img {
+    cursor: pointer;
+  }
 }
 
 #quotes {
-    i {
-        opacity: 0.3;
-    }
+  i {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        background: #1f1f1f;
+  .navbar {
+    background: #1f1f1f;
 
-        .nav-link:hover {
-            border-bottom: none;
-        }
+    .nav-link:hover {
+      border-bottom: none;
     }
-    #showcase {
-        min-height: 500px;
+  }
+  #showcase {
+    min-height: 500px;
 
-        h1 {
-            font-size: 4rem;
-        }
+    h1 {
+      font-size: 4rem;
     }
+  }
 }
 
 #footer {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 #scrollTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: opacity 0.3s ease-in-out;
 
-    opacity: 0;
+  opacity: 0;
 }
